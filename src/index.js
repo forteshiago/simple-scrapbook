@@ -116,7 +116,7 @@ class TaskList {
       
       await api.put(`/scrapbook/${scrapId}`,  {title: title, message: message});
      
-      this.scraps[scrapIndex] = { title, message }; 
+      this.scraps[scrapIndex] = { scrapId, title, message }; 
       
       this.renderScraps();
 
